@@ -1,0 +1,14 @@
+extends admin_head
+
+block content
+  div.video-wrapper
+    div.video-play
+      video.player(id="player" class="video-js" controls reload="auto" width="1100" data-setup='{}')
+        <source src="../#{video[0].play}" type="video/mp4" ></source>    
+    div#adq.add(type="buton" ) 添加问题
+    div.question-list
+      form.form( id="queform" action="/ques/"+video[0].id method="post")
+        input.finish#finish(type='submit' value="完成")
+  script(src="../public/javascripts/set.js")
+  script(src="../public/javascripts/jquery-3.2.1.min.js")
+  script(src="../video.js/dist/video.js")

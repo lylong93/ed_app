@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title e-learin
+    //- link(rel='stylesheet', href='vidage/dist/styles/Vidage.css')
+    link(rel='stylesheet',href='/stylesheets/index.css')
+  body
+    div.Vidage
+      video(id="video" class="Vidage__video" loop autoplay muted)
+        <source src="bg.mp4" type="video/mp4" ></source>
+    div.user-wrapper
+      p.logo-wrapper
+        span.logo-img
+          image(src="")
+        span.logo-name e-learin
+      form(action="/user/singin",method="post")
+        div.list
+          input.list_input(type="text" name="name" placeholder="输入名字")
+        div.list
+          input.list_input(type="password" name="password" placeholder="输入密码")
+        div.singup
+          a(href="/signup") 注册
+        input.singin(type="submit" value="登录")

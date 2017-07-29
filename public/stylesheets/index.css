@@ -1,0 +1,50 @@
+.Vidage {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; }
+  .Vidage .Vidage__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%); }
+
+.user-wrapper {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  top: 30%;
+  left: 39%; }
+  .user-wrapper .logo-wrapper .logo-name {
+    margin-left: 30px;
+    font-size: 35px;
+    color: #33bfec; }
+  .user-wrapper .list {
+    width: 300px;
+    margin: 20px; }
+  .user-wrapper .singup {
+    width: 50px;
+    margin-left: 30px;
+    cursor: pointer; }
+  .user-wrapper .list_input {
+    padding: 10px 5px; }
+  .user-wrapper .singin {
+    border: 0px;
+    margin: 20px;
+    width: 185px;
+    height: 50px;
+    font-size: 20px;
+    background: rgba(58, 123, 128, 0.6);
+    cursor: pointer; }
+    .user-wrapper .singin:hover {
+      background: #3a7b80;
+      color: #fff; }

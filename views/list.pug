@@ -1,0 +1,20 @@
+extends admin_head
+
+block content
+  h1.title 视频列表页
+  ul.list-wrapper
+    each item in videos
+      li
+        span 
+          img(src="../files/"+item.image  width="90px ")
+        span
+          span=item.describe
+        //- span 
+        //-   a(href="/play/"+item.id) 播放
+
+        span
+          a(href="/set/"+item.id) 设置问题
+        span
+          a(href="/userlist/"+item.id) 评分
+        span
+          a(href="delet/"+item.id) 删除

@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title e-learining
+    link(rel='stylesheet', href='/stylesheets/head.css')
+    link(rel='stylesheet', href='/stylesheets/home.css')
+    link(href="../video.js/dist/video-js.css" rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/play.css')
+  body
+    div.head
+      div.logo 
+        img(src='/images/pug.jpg' height='50px')
+        span e-learining
+      div.user
+        span.head-img
+          img(src='/images/pug.jpg')
+        span
+          a(href="#") 欢迎#{user.name}
+        span
+          a(href="/user/singout") 退出
+    block content

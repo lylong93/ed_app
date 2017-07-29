@@ -1,0 +1,12 @@
+extends admin_head
+
+block content
+  h1.title 用户
+  ul.list-wrapper
+    each item in users
+      li
+        span #{item.name}
+        span.del
+          a(href='/user/delet/'+item.id) 删除用户        
+  script(src="../public/javascripts/jquery-3.2.1.min.js")
+  script(src="../public/javascripts/userlist.js")

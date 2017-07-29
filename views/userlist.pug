@@ -1,0 +1,13 @@
+extends admin_head
+
+block content
+  h1.title 用户
+  span#id(style="display:none") #{id}
+  ul.list-wrapper
+    each item in users
+      li
+        span #{item.name}
+        span.show 
+          a(href="#") 查看
+  script(src="../public/javascripts/jquery-3.2.1.min.js")
+  script(src="../public/javascripts/userlist.js")

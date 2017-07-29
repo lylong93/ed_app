@@ -1,0 +1,12 @@
+extends admin_head
+
+block content
+  div.adminup-wrapper
+    form(action="/admin/up" method="post" enctype="multipart/form-data")
+      p 图片
+        input.put(type="file" placeholder="输入图片地址" name="image")
+      p 视频
+        input.put(type="file" placeholder="输入视频地址" name="play")
+      p 描述
+        input.put(type="text" placeholder="输入视频描述" name="describe")
+      input.put(type='submit')

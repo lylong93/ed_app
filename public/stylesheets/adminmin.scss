@@ -1,0 +1,34 @@
+.admin-wrapper{
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  .but{
+    text-decoration: none;
+    display: block;
+    border: 1px solid rgb(32, 41, 39);
+    width:200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 12px;
+    color: rgb(73, 129, 57);
+    &:hover{
+      color:#fff;
+      background-color:rgba(50, 43, 43, 0.6)
+    }
+  }
+}
+.adminup-wrapper{
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border:1px solid black;
+  box-shadow:3px 3px 3px black;
+  background: rgba(94, 96, 62,.5);
+  font-size: 20px;
+  .put{
+    margin: 10px;
+    padding: 5px;
+  }
+}

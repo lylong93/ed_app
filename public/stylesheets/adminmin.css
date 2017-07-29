@@ -1,0 +1,30 @@
+.admin-wrapper {
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 100px; }
+  .admin-wrapper .but {
+    text-decoration: none;
+    display: block;
+    border: 1px solid #202927;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 12px;
+    color: #498139; }
+    .admin-wrapper .but:hover {
+      color: #fff;
+      background-color: rgba(50, 43, 43, 0.6); }
+
+.adminup-wrapper {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 100px;
+  border: 1px solid black;
+  box-shadow: 3px 3px 3px black;
+  background: rgba(94, 96, 62, 0.5);
+  font-size: 20px; }
+  .adminup-wrapper .put {
+    margin: 10px;
+    padding: 5px; }

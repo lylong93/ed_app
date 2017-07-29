@@ -1,0 +1,19 @@
+extends head
+
+block content
+  div.des
+    span.des-title #{video[0].describe}
+  div.video-wrapper
+    div.video-play
+      <p id='p' style="display:none">#{video[0]._id}</p>
+      video.player(id="player" class="video-js" controls reload="auto" width="1100" data-setup='{}')
+        <source src="../#{video[0].play}" type="video/mp4" ></source>
+    div.answer-list
+      if ishave
+        a() 你已经玩完成此课程
+      else
+        form.form( id="anwsform" action="/answ/"+video[0].id method="post")
+          input.finish#finish(type='submit' value="完成")
+  script(src="../public/javascripts/jquery-3.2.1.min.js")
+  script(src="../video.js/dist/video.js")
+  script(src="../public/javascripts/play.js")

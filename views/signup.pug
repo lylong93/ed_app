@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    title 注册
+    link(rel='stylesheet', href='/stylesheets/signup.css')
+  body
+    div.sign-wrapper
+      img(src='timg.jpg')
+    form.form(action="/user/singup",method="post")
+      div.list
+        input.list_input(type="text" name="name" placeholder="输入名字")
+      div.list
+        input.list_input(type="password" name="password" placeholder="输入密码")
+      input.singup(type="submit" value="注册")

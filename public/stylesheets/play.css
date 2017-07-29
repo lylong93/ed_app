@@ -1,0 +1,28 @@
+.des {
+  height: 30px;
+  width: 25%;
+  margin: 3px 0 15px 15px;
+  border-bottom: 3px solid red; }
+  .des .des-title {
+    display: inline-block;
+    letter-spacing: 5px;
+    margin: 3px 0;
+    margin-left: 10%;
+    font-size: 25px;
+    color: #1c839e; }
+
+.video-wrapper {
+  width: 100%;
+  display: flex; }
+  .video-wrapper .video-play {
+    flex: 0 1 1000px; }
+    .video-wrapper .video-play .player {
+      width: 90%;
+      margin-left: 50px;
+      border: 1px solid red;
+      height: 620px; }
+  .video-wrapper .answer-list {
+    width: 200px;
+    margin-right: 10px;
+    border: solid black 1px;
+    flex: 0 1 200px; }

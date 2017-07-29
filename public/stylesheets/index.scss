@@ -1,0 +1,64 @@
+.Vidage{
+  // border: 1px solid red;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  .Vidage__video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+
+.user-wrapper{
+  width: 400px;
+  height: 300px;
+  // background: rgba(152, 155, 156, 0.19);
+  position: absolute;
+  top:30%;
+  left:39%;
+  .logo-wrapper{
+    .logo-name{
+      margin-left:30px;
+      font-size: 35px;
+      color:rgb(51, 191, 236);
+    }
+  }
+  .list{
+    width: 300px;
+    margin: 20px;
+  }
+  .singup{
+    width: 50px;
+    margin-left:30px;
+    cursor:pointer;
+  }
+  .list_input{
+    padding: 10px 5px;
+  }
+  .singin{
+    border: 0px;
+    margin:20px;
+    width: 185px;
+    height: 50px;
+    font-size: 20px;
+    background: rgba(58, 123, 128,.6);
+    cursor:pointer;
+    &:hover{
+      background: rgb(58, 123, 128);
+      color:#fff;
+    }
+  }
+}
