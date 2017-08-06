@@ -7,5 +7,5 @@
 ## 使用主要技术
 Sass+Jade+Express+Mongodb以及其他
 ## 运行
-运行mongodb 数据库名ed_app
+运行mongodb 数据库名ed_app <br>
 项目运行 npm start
